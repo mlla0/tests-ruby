@@ -16,7 +16,7 @@ def reverse_upcase_noLTA(string)
 end
 
 def array_42(arr)
-	arr.count(42) > 0 ? true : false 
+	arr.include?(42) 
 end
 
 def magic_array(arr)
