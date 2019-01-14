@@ -3,6 +3,24 @@
 
 ### Commentaires sur les exercices réalisés
 
+#### lib/00_hello.rb
+
+Pour ce premier exercice, nous avons rempli la méthode `hello` avec un simple `return "Hello!"`. Et la seconde méthode `greet(name)` est remplie avec un `return "Hello, #{name}!"`, une concaténation pour renvoyer le `name` testé par le `rspec`.
+
+#### lib/01_temperature.rb
+
+Nous avons créé deux méthodes : une première `ftoc` qui convertit des degrés fahrenheit en celsius, et une seconde `ctof`, qui fait l'inverse.  
+Remarque : pour la deuxième méthode, nous avons remplacé la fraction 9/5 par un float (1,8). Sans cela, l'opération effectuée renverrait un résultat arrondi à l'entier.
+
+#### lib/02_calculator.rb
+
+#### lib/03_basics.rb
+
+#### lib/04_simon_says.rb
+
+#### lib/05_timer.rb
+
+#### lib/06_pig_latin.rb
 
 
 ***
