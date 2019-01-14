@@ -1,3 +1,12 @@
+# Exercice THP : semaine 2, jour 1  
+## Réalisé en pair-programming par Maud Lévy & Antoine Vercoutère
+
+### Commentaires sur les exercices réalisés
+
+
+
+***
+
 Small exercices in Ruby -- RSpec 3 Edition
 ==========
 
