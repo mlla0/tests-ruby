@@ -14,13 +14,34 @@ Remarque : pour la deuxième méthode, nous avons remplacé la fraction 9/5 par 
 
 #### lib/02_calculator.rb
 
+Nous avons ici créé 6 méthodes, dont les noms parlent d'eux-mêmes : `add`, `subtract`, `sum`, `multiply`, `power`, et `factorial`.  
+Remarque : pour la méthode `power`, nous avons écrit une opération conditionnelle : si `a` est différent de 0, nous multiplions tous les chiffres de 1 à `a`, sinon, nous renvoyons 0.
+
 #### lib/03_basics.rb
+
+Nous avons créé 4 méthodes : `who_is_bigger`, qui est géré selon un `case...when`,  
+`reverse_upcase_noLTA`, qui applique au string de test un `.reverse`, puis un `.upcase`, puis un `.delete("LTA")`,  
+`array_42`, qui renvoie un `true` si l'array testé contient un 42,  
+`magic_array`, qui applique au string de test un `.flatten`, pour virer les tableaux dans les tableaux, un `.sort`, pour ranger les nombres contenus dans l'array par ordre croissant, un `.map` pour multiplier tous les chiffres contenus dans l'array par 2, un `.reject` pour virer les nombres multiples de 3, un `.uniq` pour virer les chiffres en doublons, et de nouveau un `.sort` pour sortir le tout par ordre croissant.
 
 #### lib/04_simon_says.rb
 
+Les deux premières méthodes sont assez basiques. La troisième méthode, `repeat`, a la spécificité d'avoir une valeur par défaut pour répondre à l'exercice (`i = 2`). La méthode `start_of_word` renvoie le nombre de lettres du string testé, de la première lettre jusqu'au chiffre indiqué. La méthode `first_word` effectue simplement un `.split` et un `.first` pour renvoyer uniquement le premier mot.  
+La dernière méthode `titleize` commence par définir les mots spéciaux (the, and), créé un array vide. La condition qui suit indique ceci : SI le mot n'est pas en début de phrase et qu'il appartient aux mots spéciaux, alors il entre dans l'array tel quel, SINON il est transformé avec une majuscule. Cette condition est dans une boucle qui traite chaque mot. Puis le array est renvoyé avec un `.join`, qui rétablit les espaces entre les mots.
+
 #### lib/05_timer.rb
 
+Cette méthode utilise la fonction `.divmod`, qui a la particularité de retourner deux valeurs : le résultat de la division et son reste, dans un array.  
+Nous utilisons le résultat de cette première division pour le re-diviser, et obtenir les heures et les minutes.  
+Enfin, nous ajoutons un `"%02d" * minutes[0]` pour afficher les résultats avec 2 digits.
+
 #### lib/06_pig_latin.rb
+
+Deux méthodes : `translate` et `and_ay`.  
+La méthode `and_ay` permet d'ajouter "ay" à la fin des mots à chacune des conditions.  
+La méthode `translate` se décompose en `case...when` pour répondre à chaque cas demandé par l'énoncé.  
+Le premier `when` (ligne 4) sélectionne les string commençant par une voyelle et directement suivis d'une consonne. Les autres `when` sont suivent ce principe.  
+Pour d'autres `when` concernant des strings de plus d'un mot, nous les sélectionnons avec des `.split` et `.count`, qui nous renvoient la quantité de mots contenus dans le string.
 
 
 ***
